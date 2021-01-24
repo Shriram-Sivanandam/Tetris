@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    margin: 0 auto;
+    background-color: #181111;
+    padding: 50px;
+    justify-content: center;
+}
+
+.grid {
+    width: 220px;
+    height: 440px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: gray;
+}
+
+.grid div {
+    height: 20px;
+    width: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.grid .taken {
+    border: 0;
+    margin: 1px;
+    background-color: #181111;
+}
+
+.grid .fix {
+    border: 1px solid white;
+    margin: 0;
+}
+
+.tetromino {
+    background-color: blue;
+}
+
+.mini-grid {
+    margin-left: 50px;
+    width: 88px;
+    height: 88px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: gray;
+}
+
+.mini-grid div {
+    height: 20px;
+    width: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.scoreboard {
+    margin-left: 50px;
+    margin-top: 30px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(163, 2, 2);
+    color: #ffffff;
+}
+
+.scoreHeading {
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.heading {
+    background-color: #2a292b;
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    width: 70%;
+    padding: 15px;
+}
+
+.close {
+    float: right;
+    font-size: 38px;
+    font-weight: bold;
+    color: gray;
+}
+
+.close:hover, .close:focus {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.modal-header {
+    margin: 0;
+    background-color: cyan;
+    font-size: 40px;
+    text-align: center;
+    padding: 10px
+}
+
+.modal-section {
+    margin: 0;
+    padding: 10px;
+    background-color: #FF00FF;
+}
+
+.modal-footer {
+    background-color: cyan;
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+}
+
+#start-btn {
+    background-color: teal;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#start-btn:hover, #reset-btn:hover {
+    background-color: transparent;
+    color: black;
+}
+
+#reset-btn {
+    background-color: red;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
